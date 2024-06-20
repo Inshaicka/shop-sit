@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Магазин "Современные Товары"</title>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Современные Товары</h1>
+            <nav>
+                <ul>
+                    <li><a href='#'>Главная</a></li>
+                    <li><a href='#'>Каталог</a></li>
+                    <li><a href='#'>О нас</a></li>
+                    <li><a href='#'>Контакты</a></li>
+                    <li><a href='#'>Оформление заказа</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id='home'>
+            <div class="container-greeting">
+                <h2>Добро пожаловать!</h2>
+                <p>Добро пожаловать в мир "Современных Товаров"! Мы рады приветствовать вас в нашем интернет-магазине, где вы найдете лучшие товары для современной жизни. Мы уверены, что каждый из наших продуктов поможет вам ощутить преимущества передовых технологий и сделает вашу жизнь более комфортной и удобной. Наша команда профессионалов всегда готова помочь вам сделать правильный выбор и ответить на все ваши вопросы. Добро пожаловать в будущее с "Современными Товарами"!</p>
+            </div>
+        </section>
+
+        <section id="catalog">
+            <div class="container">
+                <h2>Каталог</h2>
+                <div class="cards">
+                    <div class='card'>
+                        <img src="#">
+                        <h3>Беспроводные наушники SmartSound Pro</h3>
+                        <p> Высококачественные беспроводные наушники с шумоподавлением, до 20 часов автономной работы, поддержка Bluetooth 5.0, сенсорное управление и удобные амбушюры для комфортного прослушивания музыки и разговоров.</p>
+                        <p>29 990 ₸</p>
+                    </div>
+                    <div class='card'>
+                        <img src="#">
+                        <h3>Смартфон UltraPhone X</h3>
+                        <p>Мощный смартфон с 6.7-дюймовым AMOLED дисплеем, восьмиядерным процессором, 12 ГБ оперативной памяти и 256 ГБ встроенной памяти, четырьмя камерами с разрешением до 108 Мп, а также быстрой зарядкой и поддержкой 5G.</p>
+                        <p>199 990 ₸</p>
+                    </div>
+                    <div class='card'>
+                        <img src="#">
+                        <h3>Умные часы FitLife Watch</h3>
+                        <p>Стильные и функциональные умные часы с мониторингом сердечного ритма, отслеживанием физической активности, уведомлениями со смартфона, водонепроницаемым корпусом и до 10 дней работы без подзарядки. Идеальный компаньон для здорового образа жизни.</p>
+                        <p>49 990 ₸</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about_us">
+            <div class="container-faq">
+                <h2>О нас</h2>
+                <p>Мы - интернет-магазин предлагающий широкий ассортимент современных гаджетов и электроники высокого качества. Наша компания стремится обеспечить клиентов самыми передовыми технологиями и стильными решениями, чтобы сделать их повседневную жизнь более удобной, эффективной и увлекательной. Мы гордимся своим профессионализмом, инновационным подходом к бизнесу и превосходным обслуживанием клиентов.</p>
+            </div>
+        </section>
+
+        <section id="order">
+            <div class="container-order">
+                <h2>Оформление заказа</h2>
+                <form>
+                	<input type="text" placeholder="Ваше имя" id='name'>
+                	<input type="text" placeholder="Ваш адрес" id="address">
+                	<div class="select-container">
+                    	<input placeholder="Выберите продукт" id="product" list="products">
+                    	<datalist id="products">
+                       		<option value="Наушники SmartSound Pro"></option>
+                        	<option value="Смартфон UltraPhone X"></option>
+                        	<option value="Умные часы FitLife Watch"></option>
+                    	</datalist>
+                	</div>
+                	<button>Оформить заказ</button>
+            	</form>
+            </div>
+        </section>
+
+        <section id="contacts">
+            <div class="container">
+                <h2>Контакты</h2>
+                <p>Email: shop@gmail.com</p>
+                <p>Телефон: +7-111-222-33-44</п>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Магазин</п>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

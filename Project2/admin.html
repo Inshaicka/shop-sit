@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="admin-style.css">
+    <title>Административная Панель</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Административная Панель</h1>
+            <nav>
+                <ul>
+                    <li><a href='#products'>Товары</a></li>
+                    <li><a href='#orders'>Заказы</a></li>
+                    <li><a href='#users'>Пользователи</a></li>
+                    <li><a href='#content'>Контент сайта</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id='products'>
+            <div class="container">
+                <h2>Управление Товарами</h2>
+                <form>
+                    <input type="text" placeholder="Название товара" id='product-name'>
+                    <input type="text" placeholder="Описание товара" id='product-description'>
+                    <input type="number" placeholder="Цена товара" id='product-price'>
+                    <input type="file" placeholder="Изображение товара" id='product-image'>
+                    <button>Добавить товар</button>
+                </form>
+                <table>
+                    <tr>
+                        <th>Название</th>
+                        <th>Описание</th>
+                        <th>Цена</th>
+                        <th>Изображение</th>
+                        <th>Действия</th>
+                    </tr>
+                    <tr>
+                        <td>Умные часы FitLife Watch</td>
+                        <td><p>Стильные и функциональные умные часы.</p> 
+                            <p>Идеальный компаньон для здорового образа жизни.</p></td>
+                        <td>49 990 ₸</td>
+                        <td><img src="../assets/watch.jpg" alt="Пример"></td>
+                        <td><button>Редактировать</button> <button>Удалить</button></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section id='orders'>
+            <div class="container">
+                <h2>Управление Заказами</h2>
+                <table>
+                    <tr>
+                        <th>ID заказа</th>
+                        <th>Имя клиента</th>
+                        <th>Адрес</th>
+                        <th>Продукт</th>
+                        <th>Статус</th>
+                        <th>Действия</th>
+                    </tr>
+                    <tr>
+                        <td>001</td>
+                        <td>Иван Иванов</td>
+                        <td>г. N, ул. X, 1</td>
+                        <td>Умные часы FitLife Watch</td>
+                        <td>В обработке</td>
+                        <td><button>Изменить статус</button> <button>Удалить</button></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section id='users'>
+            <div class="container">
+                <h2>Управление Пользователями</h2>
+                <table>
+                    <tr>
+                        <th>ID пользователя</th>
+                        <th>Имя пользователя</th>
+                        <th>Email</th>
+                        <th>Роль</th>
+                        <th>Действия</th>
+                    </tr>
+                    <tr>
+                        <td>001</td>
+                        <td>admin</td>
+                        <td>admin@example.com</td>
+                        <td>Администратор</td>
+                        <td><button>Изменить роль</button> <button>Удалить</button></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section id='content'>
+            <div class="container">
+                <h2>Управление Контентом Сайта</h2>
+                <form>
+                    <label for='homepage-text'>Текст на главной странице:</label>
+                    <textarea id='homepage-text'></textarea>
+                    <button>Сохранить изменения</button>
+                </form>
+                <form>
+                    <label for='about-text'>Текст страницы "О нас":</label>
+                    <textarea id='about-text'></textarea>
+                    <button>Сохранить изменения</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Магазин "Современные Товары"</p>
+        </div>
+    </footer>
+
+    <script src="admin-script.js"></script>
+</body>
+</html>
